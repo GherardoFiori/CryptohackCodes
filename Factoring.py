@@ -1,8 +1,6 @@
+import math
+number = 510143758735509025530880200653196460532653147
+def print_factors(number):
+    return [(x, number / x)  for x in range(int(math.sqrt(number)))[2:] if not number % x]
 
-
-y = 510143758735509025530880200653196460532653147
-x = 1
-while x<=y:
-    if y%x==0:
-        print(x, end=' ')
-    x = x+1
+print (print_factors)
